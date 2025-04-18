@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Купить Умную колонку Яндекс Станция Макс</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* CSS стили будут здесь */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: #fff;
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff5722;
+        }
+        
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .product-images {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .main-image {
+            width: 100%;
+            height: 400px;
+            object-fit: contain;
+            margin-bottom: 15px;
+            border: 1px solid #eee;
+            border-radius: 5px;
+        }
+        
+        .thumbnail-container {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .thumbnail {
+            width: 70px;
+            height: 70px;
+            object-fit: cover;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .thumbnail:hover {
+            border-color: #ff5722;
+        }
+        
+        .product-info {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .product-title {
+            font-size: 28px;
+            margin-bottom: 15px;
+            color: #222;
+        }
+        
+        .product-price {
+            font-size: 32px;
+            font-weight: bold;
+            color: #ff5722;
+            margin-bottom: 20px;
+        }
+        
+        .product-description {
+            margin-bottom: 25px;
+            color: #555;
+        }
+        
+        .buy-btn {
+            background-color: #ff5722;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            margin-bottom: 25px;
+            transition: background-color 0.3s;
+        }
+        
+        .buy-btn:hover {
+            background-color: #e64a19;
+        }
+        
+        .delivery-section {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        
+        .section-title {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: #222;
+        }
+        
+        .delivery-options {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .delivery-option {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .delivery-option input {
+            margin-right: 10px;
+        }
+        
+        .delivery-form {
+            display: none;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        .form-group input, 
+        .form-group select, 
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        
+        .form-row {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .form-row .form-group {
+            flex: 1;
+        }
+        
+        .features {
+            margin-top: 30px;
+        }
+        
+        .features ul {
+            list-style-type: none;
+        }
+        
+        .features li {
+            padding: 8px 0;
+            position: relative;
+            padding-left: 25px;
+        }
+        
+        .features li:before {
+            content: "\f00c";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            color: #4CAF50;
+            position: absolute;
+            left: 0;
+        }
+        
+        @media (max-width: 768px) {
+            .form-row {
+                flex-direction: column;
+                gap: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">МойМагазин</div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="product-container">
+            <div class="product-images">
+                <img src="https://via.placeholder.com/600x400?text=Яндекс+Станция+Макс" alt="Яндекс Станция Макс" class="main-image" id="mainImage">
+                <div class="thumbnail-container">
+                    <img src="https://via.placeholder.com/150x150?text=Вид+1" alt="Вид 1" class="thumbnail" onclick="changeImage(this)">
+                    <img src="https://via.placeholder.com/150x150?text=Вид+2" alt="Вид 2" class="thumbnail" onclick="changeImage(this)">
+                    <img src="https://via.placeholder.com/150x150?text=Вид+3" alt="Вид 3" class="thumbnail" onclick="changeImage(this)">
+                    <img src="https://via.placeholder.com/150x150?text=Вид+4" alt="Вид 4" class="thumbnail" onclick="changeImage(this)">
+                </div>
+            </div>
+            
+            <div class="product-info">
+                <h1 class="product-title">Умная колонка Яндекс Станция Макс</h1>
+                <div class="product-price">29 990 ₽</div>
+                <div class="product-description">
+                    <p>Яндекс Станция Макс — это умная колонка с Алисой, которая управляет умным домом, включает музыку и кино, отвечает на вопросы и помогает в делах. Отличный звук, экран для визуализации контента и мощный голосовой помощник.</p>
+                </div>
+                
+                <button class="buy-btn" id="buyBtn">Купить сейчас</button>
+                
+                <div class="features">
+                    <h3 class="section-title">Характеристики:</h3>
+                    <ul>
+                        <li>Мощный звук с сабвуфером</li>
+                        <li>Экран для визуализации контента</li>
+                        <li>Управление умным домом</li>
+                        <li>Голосовой помощник Алиса</li>
+                        <li>Поддержка Яндекс.Музыки, Кинопоиска и других сервисов</li>
+                        <li>Wi-Fi и Bluetooth подключение</li>
+                    </ul>
+                </div>
+                
+                <div class="delivery-section">
+                    <h3 class="section-title">Способы доставки:</h3>
+                    <div class="delivery-options">
+                        <label class="delivery-option">
+                            <input type="radio" name="delivery" value="courier" checked onchange="showDeliveryForm('courier')">
+                            Курьерская доставка
+                        </label>
+                        <label class="delivery-option">
+                            <input type="radio" name="delivery" value="pickup" onchange="showDeliveryForm('pickup')">
+                            Самовывоз из пункта выдачи
+                        </label>
+                        <label class="delivery-option">
+                            <input type="radio" name="delivery" value="post" onchange="showDeliveryForm('post')">
+                            Почта России
+                        </label>
+                    </div>
+                    
+                    <div id="courierForm" class="delivery-form">
+                        <h4>Данные для доставки курьером</h4>
+                        <div class="form-group">
+                            <label for="courierName">ФИО получателя*</label>
+                            <input type="text" id="courierName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="courierPhone">Телефон*</label>
+                            <input type="tel" id="courierPhone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="courierAddress">Адрес доставки*</label>
+                            <textarea id="courierAddress" rows="3" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="courierDate">Желаемая дата доставки</label>
+                            <input type="date" id="courierDate">
+                        </div>
+                        <div class="form-group">
+                            <label for="courierComment">Комментарий к заказу</label>
+                            <textarea id="courierComment" rows="2"></textarea>
+                        </div>
+                    </div>
+                    
+                    <div id="pickupForm" class="delivery-form">
+                        <h4>Данные для самовывоза</h4>
+                        <div class="form-group">
+                            <label for="pickupPoint">Пункт выдачи*</label>
+                            <select id="pickupPoint" required>
+                                <option value="">Выберите пункт выдачи</option>
+                                <option value="point1">Пункт выдачи 1 (ул. Центральная, 10)</option>
+                                <option value="point2">Пункт выдачи 2 (пр. Ленина, 25)</option>
+                                <option value="point3">Пункт выдачи 3 (ул. Гагарина, 7)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="pickupName">ФИО получателя*</label>
+                            <input type="text" id="pickupName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="pickupPhone">Телефон*</label>
+                            <input type="tel" id="pickupPhone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="pickupDate">Желаемая дата получения</label>
+                            <input type="date" id="pickupDate">
+                        </div>
+                    </div>
+                    
+                    <div id="postForm" class="delivery-form">
+                        <h4>Данные для почтовой доставки</h4>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="postLastName">Фамилия*</label>
+                                <input type="text" id="postLastName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="postFirstName">Имя*</label>
+                                <input type="text" id="postFirstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="postMiddleName">Отчество</label>
+                                <input type="text" id="postMiddleName">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="postPhone">Телефон*</label>
+                            <input type="tel" id="postPhone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="postIndex">Почтовый индекс*</label>
+                            <input type="text" id="postIndex" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="postAddress">Полный адрес*</label>
+                            <textarea id="postAddress" rows="3" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="postComment">Комментарий к заказу</label>
+                            <textarea id="postComment" rows="2"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript код будет здесь
+        document.addEventListener('DOMContentLoaded', function() {
+            // Показываем форму курьерской доставки по умолчанию
+            showDeliveryForm('courier');
+            
+            // Обработчик кнопки покупки
+            document.getElementById('buyBtn').addEventListener('click', async function() {
+    // Собираем данные формы
+    const formData = collectFormData();
+    
+    // Проверяем обязательные поля
+    if (!validateForm(formData)) {
+        alert('Пожалуйста, заполните все обязательные поля!');
+        return;
+    }
+    
+    // Отправляем данные в Telegram
+    const isSent = await sendOrderToServer(formData);
+    
+    if (isSent) {
+        alert('Спасибо за заказ! Мы свяжемся с вами в ближайшее время.');
+        // Можно добавить сброс формы или редирект
+    } else {
+        alert('Произошла ошибка при отправке заказа. Пожалуйста, попробуйте еще раз или свяжитесь с нами другим способом.');
+    }
+});
+
+function validateForm(data) {
+    if (data.deliveryType === 'courier') {
+        return data.name && data.phone && data.address;
+    } else if (data.deliveryType === 'pickup') {
+        return data.name && data.phone && data.point;
+    } else if (data.deliveryType === 'post') {
+        return data.lastName && data.firstName && data.phone && data.index && data.address;
+    }
+    return false;
+}
+        });
+        
+        // Функция для смены основного изображения при клике на миниатюру
+        function changeImage(thumbnail) {
+            document.getElementById('mainImage').src = thumbnail.src;
+        }
+        
+        // Функция для показа соответствующей формы доставки
+        function showDeliveryForm(deliveryType) {
+            // Скрываем все формы
+            document.getElementById('courierForm').style.display = 'none';
+            document.getElementById('pickupForm').style.display = 'none';
+            document.getElementById('postForm').style.display = 'none';
+            
+            // Показываем нужную форму
+            document.getElementById(deliveryType + 'Form').style.display = 'block';
+        }
+        
+        // Функция для сбора данных формы (может быть расширена)
+        function collectFormData() {
+    const deliveryType = document.querySelector('input[name="delivery"]:checked').value;
+    let formData = {
+        product: 'Яндекс Станция Макс',
+        price: 29990,
+        deliveryType: deliveryType
+    };
+    
+    if (deliveryType === 'courier') {
+        formData.name = document.getElementById('courierName').value;
+        formData.phone = document.getElementById('courierPhone').value;
+        formData.address = document.getElementById('courierAddress').value;
+        formData.date = document.getElementById('courierDate').value;
+        formData.comment = document.getElementById('courierComment').value;
+    } else if (deliveryType === 'pickup') {
+        formData.name = document.getElementById('pickupName').value;
+        formData.phone = document.getElementById('pickupPhone').value;
+        formData.point = document.getElementById('pickupPoint').options[document.getElementById('pickupPoint').selectedIndex].text;
+        formData.date = document.getElementById('pickupDate').value;
+    } else if (deliveryType === 'post') {
+        formData.lastName = document.getElementById('postLastName').value;
+        formData.firstName = document.getElementById('postFirstName').value;
+        formData.middleName = document.getElementById('postMiddleName').value;
+        formData.phone = document.getElementById('postPhone').value;
+        formData.index = document.getElementById('postIndex').value;
+        formData.address = document.getElementById('postAddress').value;
+        formData.comment = document.getElementById('postComment').value;
+    }
+    
+    return formData;
+}
+        
+        async function sendOrderToServer(data) {
+    const botToken = '7568072633:AAE1j89-_KHobSn6CFC6LBQAVQstT3ufuaA'; // Замените на токен вашего бота
+    const chatId = '921466801'; // Замените на ваш chat_id
+    
+    // Формируем сообщение
+    let message = `📦 Новый заказ!\n\n`;
+    message += `🛒 Товар: ${data.product}\n`;
+    message += `💰 Цена: ${data.price} ₽\n`;
+    message += `🚚 Способ доставки: ${getDeliveryTypeName(data.deliveryType)}\n\n`;
+    
+    // Добавляем данные клиента в зависимости от типа доставки
+    if (data.deliveryType === 'courier') {
+        message += `👤 ФИО: ${data.name}\n`;
+        message += `📞 Телефон: ${data.phone}\n`;
+        message += `🏠 Адрес: ${data.address}\n`;
+        if (data.date) message += `📅 Дата доставки: ${data.date}\n`;
+        if (data.comment) message += `💬 Комментарий: ${data.comment}\n`;
+    } else if (data.deliveryType === 'pickup') {
+        message += `👤 ФИО: ${data.name}\n`;
+        message += `📞 Телефон: ${data.phone}\n`;
+        message += `🏪 Пункт выдачи: ${data.point}\n`;
+        if (data.date) message += `📅 Дата получения: ${data.date}\n`;
+    } else if (data.deliveryType === 'post') {
+        message += `👤 ФИО: ${data.lastName} ${data.firstName} ${data.middleName || ''}\n`;
+        message += `📞 Телефон: ${data.phone}\n`;
+        message += `📮 Индекс: ${data.index}\n`;
+        message += `🏠 Адрес: ${data.address}\n`;
+        if (data.comment) message += `💬 Комментарий: ${data.comment}\n`;
+    }
+    
+    try {
+        const response = await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                chat_id: chatId,
+                text: message,
+                parse_mode: 'HTML'
+            }),
+        });
+        
+        const result = await response.json();
+        console.log('Сообщение отправлено:', result);
+        return true;
+    } catch (error) {
+        console.error('Ошибка отправки:', error);
+        return false;
+    }
+}
+
+function getDeliveryTypeName(type) {
+    const types = {
+        'courier': 'Курьерская доставка',
+        'pickup': 'Самовывоз',
+        'post': 'Почта России'
+    };
+    return types[type] || type;
+}
+    </script>
+</body>
+</html>
